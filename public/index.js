@@ -1,6 +1,8 @@
 const dataDOM = document.querySelector('.data')
 
-const client = new WebSocket('ws://localhost:8080')
+const client = new WebSocket(
+  'ws://https://sen-esp32-nodejs-websocket.onrender.com'
+)
 client.onopen = () => {
   console.log('Connected to webSocket server!')
 }
